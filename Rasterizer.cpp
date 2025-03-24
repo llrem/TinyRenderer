@@ -3,6 +3,12 @@
 Rasterizer::Rasterizer(int wid, int hei){
     width = wid, height = hei;
     image = TGAImage(width, height, TGAImage::RGB);
+
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            image.set(x, y, TGAColor(255, 255, 255, 255));
+        }
+    }
     
     z_buffer = new float[width * height];
     for(int i = 0; i < width * height; i++){
