@@ -6,7 +6,7 @@ Rasterizer::Rasterizer(int wid, int hei){
 
     for (int y = 0; y < height; y++) {
         for (int x = 0; x < width; x++) {
-            image.set(x, y, TGAColor(255, 255, 255, 255));
+            image.set(x, y, TGAColor(50, 50, 50, 255));
         }
     }
     
